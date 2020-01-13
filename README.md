@@ -7,16 +7,16 @@ This project is covering a basic Api automation test framework and some sample t
 Although, we can surely enhance it more with lots of robust features.
 
  
-####Positive Cases : The implement automated tests are the following -
+###Positive Cases : The implement automated tests are the following -
 * getBookings: Testing at least 2 existing bookings are returned in the response. 
 * getBooking: Testing the data returned for an existing booking matches.
 * createBooking: Testing the bookings can be created. 
 
-####Negative Cases : The implement automated tests are the following -
+###Negative Cases : The implement automated tests are the following -
 - A room cannot be booked more than once for a given date.
 - The check-out date must be greater than the check-in date.
 
-####Note:
+###Note:
 The booking database resets every 10 minutes, and we are creating the bookings in each test case and respectively verifying the response(s) of Api(s).
 At some point, it may happen if test data is created but within same second database reset happens, so eventually the tests may fail. So, request you to re-trigger the tests. :)
 
@@ -61,11 +61,13 @@ These instructions will get you a copy of the project up and running, on your lo
 [INFO] Total time:  11.522 s
    
 ```
+```
 
-## Test Reports
+### Test Reports
 ```
 1) Navigate to respective directory where the project is stored locally.
 2) Navigate to /report directory.
 3) Find the logs inside "executionLogs" directory.
 4) Find the logs inside "htmlReports" directory.
+```
 
