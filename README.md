@@ -36,7 +36,7 @@ The below steps will get you a copy of the project up and running, on your local
 
 ```
 1) Open your terminal and do a clone of this project.
-   git clone https://github.com/jituvrma007/apiautomation.git
+   git clone https://github.com/jituvrma007/apiAutomation.git
 2) Navigate to the respective directory and run below command.
    mvn clean install
 3) Above command will build the project along with test cases.
