@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="7" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BookingControllerSmokeTestSuite" duration-ms="15692" started-at="2020-01-14T00:09:47 IST" finished-at="2020-01-14T00:10:03 IST">
+    <groups>
+    </groups>
+    <test name="SmokeTests" duration-ms="15692" started-at="2020-01-14T00:09:47 IST" finished-at="2020-01-14T00:10:03 IST">
+      <class name="com.assignment.tests.bookingController.BookingController_PostiveCases">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f]" name="beforeSuite" is-config="true" duration-ms="244" started-at="2020-01-14T00:09:47 IST" finished-at="2020-01-14T00:09:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f]" name="beforeClass" is-config="true" duration-ms="2" started-at="2020-01-14T00:09:47 IST" finished-at="2020-01-14T00:09:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2020-01-14T00:09:47 IST" finished-at="2020-01-14T00:09:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.assignment.tests.bookingController.BookingController_PostiveCases.GetAPI_getBooking_existingBooking_matches(com.assignment.tests.models.bookingController.BookingRequestModel)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="GetAPI_getBooking_existingBooking_matches(com.assignment.tests.models.bookingController.BookingRequestModel)[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f]" name="GetAPI_getBooking_existingBooking_matches" duration-ms="4227" started-at="2020-01-14T00:09:47 IST" description="Test that the data returned for an existing booking matches." data-provider="createBookingSingleObject" finished-at="2020-01-14T00:09:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=938, depositpaid=true, email=testautomation9540.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+917770867298, roomid=329]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAPI_getBooking_existingBooking_matches -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f]" name="afterMethod" is-config="true" duration-ms="186" started-at="2020-01-14T00:09:52 IST" finished-at="2020-01-14T00:09:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GetAPI_getBooking_existingBooking_matches status=SUCCESS method=BookingController_PostiveCases.GetAPI_getBooking_existingBooking_matches(com.assignment.tests.models.bookingController.BookingRequestModel)[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-01-14T00:09:52 IST" finished-at="2020-01-14T00:09:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.assignment.tests.bookingController.BookingController_PostiveCases.GetAPI_getBookings_twoBookingsReturned(java.util.List)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="GetAPI_getBookings_twoBookingsReturned(java.util.List)[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f]" name="GetAPI_getBookings_twoBookingsReturned" duration-ms="4535" started-at="2020-01-14T00:09:52 IST" description="Testing at least 2 existing bookings are returned in the response." data-provider="createBookingMultiObject" finished-at="2020-01-14T00:09:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=861, depositpaid=true, email=testautomation8080.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+917442444873, roomid=715], BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-24, checkout=2020-01-26], bookingid=632, depositpaid=true, email=testautomation3008.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+918142758389, roomid=715]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAPI_getBookings_twoBookingsReturned -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f]" name="afterMethod" is-config="true" duration-ms="32" started-at="2020-01-14T00:09:56 IST" finished-at="2020-01-14T00:09:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GetAPI_getBookings_twoBookingsReturned status=SUCCESS method=BookingController_PostiveCases.GetAPI_getBookings_twoBookingsReturned(java.util.List)[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-01-14T00:09:56 IST" finished-at="2020-01-14T00:09:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.assignment.tests.bookingController.BookingController_PostiveCases.PostAPI_createBooking_booking_canBeCreated(com.assignment.tests.models.bookingController.BookingRequestModel)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="PostAPI_createBooking_booking_canBeCreated(com.assignment.tests.models.bookingController.BookingRequestModel)[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f]" name="PostAPI_createBooking_booking_canBeCreated" duration-ms="1791" started-at="2020-01-14T00:09:56 IST" description="Test that bookings can be created." data-provider="createBookingSingleObject" finished-at="2020-01-14T00:09:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=570, depositpaid=true, email=testautomation1456.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+917700253231, roomid=497]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostAPI_createBooking_booking_canBeCreated -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f]" name="afterMethod" is-config="true" duration-ms="29" started-at="2020-01-14T00:09:58 IST" finished-at="2020-01-14T00:09:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PostAPI_createBooking_booking_canBeCreated status=SUCCESS method=BookingController_PostiveCases.PostAPI_createBooking_booking_canBeCreated(com.assignment.tests.models.bookingController.BookingRequestModel)[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-01-14T00:10:03 IST" finished-at="2020-01-14T00:10:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.assignment.tests.bookingController.BookingController_PostiveCases -->
+      <class name="com.assignment.tests.bookingController.BookingController_NegativeCases">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.assignment.tests.bookingController.BookingController_NegativeCases@31f924f5]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-01-14T00:09:58 IST" finished-at="2020-01-14T00:09:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.assignment.tests.bookingController.BookingController_NegativeCases@31f924f5]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-01-14T00:09:58 IST" finished-at="2020-01-14T00:09:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.assignment.tests.bookingController.BookingController_NegativeCases.PostAPI_createBooking_checkOutDate_greaterThen_checkInDate(com.assignment.tests.models.bookingController.BookingRequestModel)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="PostAPI_createBooking_checkOutDate_greaterThen_checkInDate(com.assignment.tests.models.bookingController.BookingRequestModel)[pri:0, instance:com.assignment.tests.bookingController.BookingController_NegativeCases@31f924f5]" name="PostAPI_createBooking_checkOutDate_greaterThen_checkInDate" duration-ms="1604" started-at="2020-01-14T00:09:58 IST" description="The check-out date must be greater than the check-in date." data-provider="createBookingSingleObjectNegativeCase" finished-at="2020-01-14T00:10:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-26, checkout=2020-01-24], bookingid=828, depositpaid=true, email=testautomation4912.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+918116888444, roomid=663]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostAPI_createBooking_checkOutDate_greaterThen_checkInDate -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.assignment.tests.bookingController.BookingController_NegativeCases@31f924f5]" name="afterMethod" is-config="true" duration-ms="31" started-at="2020-01-14T00:10:00 IST" finished-at="2020-01-14T00:10:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PostAPI_createBooking_checkOutDate_greaterThen_checkInDate status=SUCCESS method=BookingController_NegativeCases.PostAPI_createBooking_checkOutDate_greaterThen_checkInDate(com.assignment.tests.models.bookingController.BookingRequestModel)[pri:0, instance:com.assignment.tests.bookingController.BookingController_NegativeCases@31f924f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.assignment.tests.bookingController.BookingController_NegativeCases@31f924f5]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-01-14T00:10:00 IST" finished-at="2020-01-14T00:10:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.assignment.tests.bookingController.BookingController_NegativeCases.PostAPI_createBooking_moreThenOnceInDay(java.util.List)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="PostAPI_createBooking_moreThenOnceInDay(java.util.List)[pri:0, instance:com.assignment.tests.bookingController.BookingController_NegativeCases@31f924f5]" name="PostAPI_createBooking_moreThenOnceInDay" duration-ms="3202" started-at="2020-01-14T00:10:00 IST" description="A room cannot be booked more than once for a given date." data-provider="createBookingMultiObjectNegativeCase" finished-at="2020-01-14T00:10:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=964, depositpaid=true, email=testautomation5955.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+917501492956, roomid=849], BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=583, depositpaid=true, email=testautomation8925.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+918366274302, roomid=849]]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostAPI_createBooking_moreThenOnceInDay -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.assignment.tests.bookingController.BookingController_NegativeCases@31f924f5]" name="afterMethod" is-config="true" duration-ms="25" started-at="2020-01-14T00:10:03 IST" finished-at="2020-01-14T00:10:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PostAPI_createBooking_moreThenOnceInDay status=SUCCESS method=BookingController_NegativeCases.PostAPI_createBooking_moreThenOnceInDay(java.util.List)[pri:0, instance:com.assignment.tests.bookingController.BookingController_NegativeCases@31f924f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.assignment.tests.bookingController.BookingController_NegativeCases -->
+    </test> <!-- SmokeTests -->
+  </suite> <!-- BookingControllerSmokeTestSuite -->
+</testng-results>

@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>TestNG:  SmokeTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SmokeTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 14 00:09:47 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>15 seconds (15692 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.assignment.tests.bookingController.BookingController_PostiveCases.GetAPI_getBooking_existingBooking_matches()'><b>GetAPI_getBooking_existingBooking_matches</b><br>Test class: com.assignment.tests.bookingController.BookingController_PostiveCases<br>Test method: Test that the data returned for an existing booking matches.<br>Parameters: BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=938, depositpaid=true, email=testautomation9540.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+917770867298, roomid=329]</td>
+<td></td>
+<td>4</td>
+<td>com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f</td></tr>
+<tr>
+<td title='com.assignment.tests.bookingController.BookingController_PostiveCases.GetAPI_getBookings_twoBookingsReturned()'><b>GetAPI_getBookings_twoBookingsReturned</b><br>Test class: com.assignment.tests.bookingController.BookingController_PostiveCases<br>Test method: Testing at least 2 existing bookings are returned in the response.<br>Parameters: [BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=861, depositpaid=true, email=testautomation8080.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+917442444873, roomid=715], BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-24, checkout=2020-01-26], bookingid=632, depositpaid=true, email=testautomation3008.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+918142758389, roomid=715]]</td>
+<td></td>
+<td>4</td>
+<td>com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f</td></tr>
+<tr>
+<td title='com.assignment.tests.bookingController.BookingController_PostiveCases.PostAPI_createBooking_booking_canBeCreated()'><b>PostAPI_createBooking_booking_canBeCreated</b><br>Test class: com.assignment.tests.bookingController.BookingController_PostiveCases<br>Test method: Test that bookings can be created.<br>Parameters: BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=570, depositpaid=true, email=testautomation1456.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+917700253231, roomid=497]</td>
+<td></td>
+<td>1</td>
+<td>com.assignment.tests.bookingController.BookingController_PostiveCases@5c18298f</td></tr>
+<tr>
+<td title='com.assignment.tests.bookingController.BookingController_NegativeCases.PostAPI_createBooking_checkOutDate_greaterThen_checkInDate()'><b>PostAPI_createBooking_checkOutDate_greaterThen_checkInDate</b><br>Test class: com.assignment.tests.bookingController.BookingController_NegativeCases<br>Test method: The check-out date must be greater than the check-in date.<br>Parameters: BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-26, checkout=2020-01-24], bookingid=828, depositpaid=true, email=testautomation4912.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+918116888444, roomid=663]</td>
+<td></td>
+<td>1</td>
+<td>com.assignment.tests.bookingController.BookingController_NegativeCases@31f924f5</td></tr>
+<tr>
+<td title='com.assignment.tests.bookingController.BookingController_NegativeCases.PostAPI_createBooking_moreThenOnceInDay()'><b>PostAPI_createBooking_moreThenOnceInDay</b><br>Test class: com.assignment.tests.bookingController.BookingController_NegativeCases<br>Test method: A room cannot be booked more than once for a given date.<br>Parameters: [BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=964, depositpaid=true, email=testautomation5955.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+917501492956, roomid=849], BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=583, depositpaid=true, email=testautomation8925.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+918366274302, roomid=849]]</td>
+<td></td>
+<td>3</td>
+<td>com.assignment.tests.bookingController.BookingController_NegativeCases@31f924f5</td></tr>
+</table><p>
+</body>
+</html>

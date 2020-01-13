@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Environment name = "prod" protocol="https://">
+	<Service name="bookingService" baseurl="automationintesting.online/booking" port="">
+		<Api name="getBookings" endpoint="/?roomid=${0}" />
+		<Api name="createBooking" endpoint="/" />
+		<Api name="getBooking" endpoint="/${0}" />
+	</Service>
+</Environment>

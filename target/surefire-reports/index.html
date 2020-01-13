@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-BookingControllerSmokeTestSuite">
+              <span class="suite-name border-passed">BookingControllerSmokeTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-BookingControllerSmokeTestSuite">
+                    <span>BookingController_Smoke.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-BookingControllerSmokeTestSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-BookingControllerSmokeTestSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-BookingControllerSmokeTestSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-BookingControllerSmokeTestSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-BookingControllerSmokeTestSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-BookingControllerSmokeTestSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-BookingControllerSmokeTestSuite" class="hide-methods passed suite-BookingControllerSmokeTestSuite"> (hide)</a> <!-- hide-methods passed suite-BookingControllerSmokeTestSuite -->
+                      <a href="#" panel-name="suite-BookingControllerSmokeTestSuite" class="show-methods passed suite-BookingControllerSmokeTestSuite"> (show)</a> <!-- show-methods passed suite-BookingControllerSmokeTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-BookingControllerSmokeTestSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingControllerSmokeTestSuite" title="com.assignment.tests.bookingController.BookingController_PostiveCases" hash-for-method="GetAPI_getBooking_existingBooking_matches(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], booki...)">GetAPI_getBooking_existingBooking_matches(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], booki...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingControllerSmokeTestSuite" title="com.assignment.tests.bookingController.BookingController_PostiveCases" hash-for-method="GetAPI_getBookings_twoBookingsReturned([BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], book...)">GetAPI_getBookings_twoBookingsReturned([BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], book...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingControllerSmokeTestSuite" title="com.assignment.tests.bookingController.BookingController_PostiveCases" hash-for-method="PostAPI_createBooking_booking_canBeCreated(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], booki...)">PostAPI_createBooking_booking_canBeCreated(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], booki...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingControllerSmokeTestSuite" title="com.assignment.tests.bookingController.BookingController_NegativeCases" hash-for-method="PostAPI_createBooking_checkOutDate_greaterThen_checkInDate(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-26, checkout=2020-01-24], booki...)">PostAPI_createBooking_checkOutDate_greaterThen_checkInDate(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-26, checkout=2020-01-24], booki...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BookingControllerSmokeTestSuite" title="com.assignment.tests.bookingController.BookingController_NegativeCases" hash-for-method="PostAPI_createBooking_moreThenOnceInDay([BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], book...)">PostAPI_createBooking_moreThenOnceInDay([BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], book...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-BookingControllerSmokeTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-BookingControllerSmokeTestSuite" class="panel BookingControllerSmokeTestSuite">
+          <div class="suite-BookingControllerSmokeTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.assignment.tests.bookingController.BookingController_PostiveCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAPI_getBooking_existingBooking_matches(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], booki...)">
+                  </a> <!-- GetAPI_getBooking_existingBooking_matches(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], booki...) -->
+                  <span class="method-name">GetAPI_getBooking_existingBooking_matches</span>
+                  <span class="parameters">(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=938, depositpaid=true, email=testautomation9540.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+917770867298, roomid=329])</span>
+                  <em>
+(Test that the data returned for an existing booking matches.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAPI_getBookings_twoBookingsReturned([BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], book...)">
+                  </a> <!-- GetAPI_getBookings_twoBookingsReturned([BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], book...) -->
+                  <span class="method-name">GetAPI_getBookings_twoBookingsReturned</span>
+                  <span class="parameters">([BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=861, depositpaid=true, email=testautomation8080.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+917442444873, roomid=715], BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-24, checkout=2020-01-26], bookingid=632, depositpaid=true, email=testautomation3008.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+918142758389, roomid=715]])</span>
+                  <em>
+(Testing at least 2 existing bookings are returned in the response.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PostAPI_createBooking_booking_canBeCreated(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], booki...)">
+                  </a> <!-- PostAPI_createBooking_booking_canBeCreated(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], booki...) -->
+                  <span class="method-name">PostAPI_createBooking_booking_canBeCreated</span>
+                  <span class="parameters">(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=570, depositpaid=true, email=testautomation1456.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+917700253231, roomid=497])</span>
+                  <em>
+(Test that bookings can be created.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookingControllerSmokeTestSuite-class-passed -->
+          <div class="suite-BookingControllerSmokeTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.assignment.tests.bookingController.BookingController_NegativeCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PostAPI_createBooking_checkOutDate_greaterThen_checkInDate(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-26, checkout=2020-01-24], booki...)">
+                  </a> <!-- PostAPI_createBooking_checkOutDate_greaterThen_checkInDate(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-26, checkout=2020-01-24], booki...) -->
+                  <span class="method-name">PostAPI_createBooking_checkOutDate_greaterThen_checkInDate</span>
+                  <span class="parameters">(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-26, checkout=2020-01-24], bookingid=828, depositpaid=true, email=testautomation4912.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+918116888444, roomid=663])</span>
+                  <em>
+(The check-out date must be greater than the check-in date.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PostAPI_createBooking_moreThenOnceInDay([BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], book...)">
+                  </a> <!-- PostAPI_createBooking_moreThenOnceInDay([BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], book...) -->
+                  <span class="method-name">PostAPI_createBooking_moreThenOnceInDay</span>
+                  <span class="parameters">([BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=964, depositpaid=true, email=testautomation5955.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+917501492956, roomid=849], BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], bookingid=583, depositpaid=true, email=testautomation8925.0@yopmail.com, firstname=TestFirstname, lastname=TestLastname, phone=+918366274302, roomid=849]])</span>
+                  <em>
+(A room cannot be booked more than once for a given date.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookingControllerSmokeTestSuite-class-passed -->
+        </div> <!-- panel BookingControllerSmokeTestSuite -->
+        <div panel-name="test-xml-BookingControllerSmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/jagjit.verma/Documents/self/workspace/apiAutomation/src/test/resources/com/assignment/testSuites/bookingController/BookingController_Smoke.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;BookingControllerSmokeTestSuite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;SmokeTests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.assignment.tests.bookingController.BookingController_PostiveCases&quot;/&gt;
+      &lt;class name=&quot;com.assignment.tests.bookingController.BookingController_NegativeCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SmokeTests --&gt;
+&lt;/suite&gt; &lt;!-- BookingControllerSmokeTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-BookingControllerSmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for BookingControllerSmokeTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SmokeTests (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-BookingControllerSmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for BookingControllerSmokeTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-BookingControllerSmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for BookingControllerSmokeTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_BookingControllerSmokeTestSuite');
+function tableData_BookingControllerSmokeTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'GetAPI_getBookings_twoBookingsReturned')
+data.setCell(0, 2, 'com.assignment.tests.bookingController.BookingController_PostiveCases')
+data.setCell(0, 3, 4535);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'GetAPI_getBooking_existingBooking_matches')
+data.setCell(1, 2, 'com.assignment.tests.bookingController.BookingController_PostiveCases')
+data.setCell(1, 3, 4227);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'PostAPI_createBooking_moreThenOnceInDay')
+data.setCell(2, 2, 'com.assignment.tests.bookingController.BookingController_NegativeCases')
+data.setCell(2, 3, 3202);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'PostAPI_createBooking_booking_canBeCreated')
+data.setCell(3, 2, 'com.assignment.tests.bookingController.BookingController_PostiveCases')
+data.setCell(3, 3, 1791);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'PostAPI_createBooking_checkOutDate_greaterThen_checkInDate')
+data.setCell(4, 2, 'com.assignment.tests.bookingController.BookingController_NegativeCases')
+data.setCell(4, 3, 1604);
+window.suiteTableData['BookingControllerSmokeTestSuite']= { tableData: data, tableDiv: 'times-div-BookingControllerSmokeTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <div id="times-div-BookingControllerSmokeTestSuite">
+              </div> <!-- times-div-BookingControllerSmokeTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-BookingControllerSmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for BookingControllerSmokeTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-BookingControllerSmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.assignment.tests.bookingController.BookingController_NegativeCases</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-BookingControllerSmokeTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.assignment.tests.bookingController.BookingController_PostiveCases</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">252 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.assignment.tests.bookingController.BookingController_PostiveCases.GetAPI_getBooking_...)</span>
+                <span class="method-start">262 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GetAPI_getBooking_existingBooking_matches(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], booki...)</span>
+                <span class="method-start">265 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=GetAPI_getBooking_existingBooking_matches status=SUCCESS method=BookingController_P...)</span>
+                <span class="method-start">4494 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.assignment.tests.bookingController.BookingController_PostiveCases.GetAPI_getBookings...)</span>
+                <span class="method-start">4681 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GetAPI_getBookings_twoBookingsReturned([BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], book...)</span>
+                <span class="method-start">4682 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=GetAPI_getBookings_twoBookingsReturned status=SUCCESS method=BookingController_Post...)</span>
+                <span class="method-start">9217 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.assignment.tests.bookingController.BookingController_PostiveCases.PostAPI_createBook...)</span>
+                <span class="method-start">9249 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PostAPI_createBooking_booking_canBeCreated(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], booki...)</span>
+                <span class="method-start">9250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=PostAPI_createBooking_booking_canBeCreated status=SUCCESS method=BookingController_...)</span>
+                <span class="method-start">11041 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.assignment.tests.bookingController.BookingController_NegativeCases</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">11072 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.assignment.tests.bookingController.BookingController_NegativeCases.PostAPI_createBoo...)</span>
+                <span class="method-start">11073 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PostAPI_createBooking_checkOutDate_greaterThen_checkInDate(BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-26, checkout=2020-01-24], booki...)</span>
+                <span class="method-start">11073 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=PostAPI_createBooking_checkOutDate_greaterThen_checkInDate status=SUCCESS method=Bo...)</span>
+                <span class="method-start">12677 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.assignment.tests.bookingController.BookingController_NegativeCases.PostAPI_createBoo...)</span>
+                <span class="method-start">12708 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PostAPI_createBooking_moreThenOnceInDay([BookingRequestModel [bookingdates=BookingDatesModel [checkin=2020-01-19, checkout=2020-01-22], book...)</span>
+                <span class="method-start">12709 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=PostAPI_createBooking_moreThenOnceInDay status=SUCCESS method=BookingController_Neg...)</span>
+                <span class="method-start">15912 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.assignment.tests.bookingController.BookingController_PostiveCases</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">15945 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
